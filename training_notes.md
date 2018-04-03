@@ -67,3 +67,8 @@ const (
   Tdate
 )
 ```
+
+### Arrays
+
+* Contiguous blocks of memory gives us mechanical sympathy
+* golang.org/pkg - the builtin link shows you all the built in functions
