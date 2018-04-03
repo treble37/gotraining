@@ -1,4 +1,4 @@
-## 4/3/18 Tuesday - Notes
+## Day 1 4/3/18 Tuesday - Notes
 
 ### Philosophy
 
@@ -103,3 +103,10 @@ if _, err := updateUser(&u); err != nil {}
 
 * deferred functions are run in LIFO order
 * the most common use case for defer is for cleaning up resources (e.g., closing file)
+
+### Day 1 Exercise
+
+* Unmarshal - []byte (byte slice) - from JSON to Go
+* Marshal - []byte - from Go to JSON
+* Decoder - io.Reader interface - from JSON to Go
+* Encoder - io.Writer interface - from Go to JSON
