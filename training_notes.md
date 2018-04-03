@@ -29,3 +29,7 @@ aa := int32(10) // this is a type conversion (not like a C cast)
 * [Default zero values](http://yourbasic.org/golang/default-zero-value/)
 * Can have int, int8, int16, int32, int64 - by default you should probably just use int
 * Go doesn't allow unused variables
+
+### Structs
+
+* zero value of a struct is the zero value of all its composite fields
