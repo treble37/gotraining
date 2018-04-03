@@ -110,3 +110,4 @@ if _, err := updateUser(&u); err != nil {}
 * Marshal - []byte - from Go to JSON
 * Decoder - io.Reader interface - from JSON to Go
 * Encoder - io.Writer interface - from Go to JSON
+* see [JSON to GO site](https://mholt.github.io/json-to-go/)
