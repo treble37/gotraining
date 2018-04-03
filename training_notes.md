@@ -33,3 +33,10 @@ aa := int32(10) // this is a type conversion (not like a C cast)
 ### Structs
 
 * zero value of a struct is the zero value of all its composite fields
+
+### Pointers
+
+* everything in Go is pass by value
+* for every value that exists of type T, another type exists of type *T
+* & = address (where is the box?)
+* * = value pointer points to (what is in the box?) - dereferences the pointer

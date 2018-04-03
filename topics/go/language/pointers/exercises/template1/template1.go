@@ -10,16 +10,21 @@
 package main
 
 // Add imports.
+import "fmt"
 
 func main() {
 
 	// Declare an integer variable with the value of 20.
-
+	v := 20
 	// Display the address of and value of the variable.
-
+	fmt.Println("Value of int:", v, "Address of int:", &v)
 	// Declare a pointer variable of type int. Assign the
 	// address of the integer variable above.
 
+	//w := &v
+	var w *int
+	w = &v
 	// Display the address of, value of and the value the pointer
 	// points to.
+	fmt.Println("w: Value:", w, "Addr of w:", &w, "Value points to:", *w)
 }
