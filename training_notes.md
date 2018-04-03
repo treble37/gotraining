@@ -90,3 +90,16 @@ const (
 * see topics/go/language/slices/example6/example6.go
 * see [Strings, bytes, runes and characters in Go](https://blog.golang.org/strings)
 * see topics/go/language/slices/example7/example7.go for variadic function example
+
+### Functions
+
+* err is a typical name you'll see for an error value; feel free to reuse it
+* see topics/go/language/functions/example2/example2.go
+
+```
+//from example2.go
+if _, err := updateUser(&u); err != nil {}
+```
+
+* deferred functions are run in LIFO order
+* the most common use case for defer is for cleaning up resources (e.g., closing file)
