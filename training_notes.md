@@ -72,3 +72,13 @@ const (
 
 * Contiguous blocks of memory gives us mechanical sympathy
 * golang.org/pkg - the builtin link shows you all the built in functions
+
+### Slices
+
+* Slices can get bigger (unlike arrays)
+* Slice is a 3 word structure
+* First word is a pointer to a backing array
+* Second word is the length
+* Third word is the capacity of the whole backing array structure
+* Any array or slice can be re-sliced
+* append is the only method that can grow a slice

@@ -10,20 +10,38 @@
 package main
 
 // Add imports.
+import "fmt"
 
 func main() {
 
 	// Declare a nil slice of integers.
+	slice := make([]int, 3)
 
 	// Appends numbers to the slice.
+	slice = append(slice, 4)
 
 	// Display each value in the slice.
+	for i, value := range slice {
+		fmt.Println("i:", i, "value:", value)
+	}
 
 	// Declare a slice of strings and populate the slice with names.
+	stringSlice := make([]string, 3)
+	stringSlice[0] = "joe"
+	stringSlice[1] = "jane"
+	stringSlice[2] = "jim"
 
 	// Display each index position and slice value.
+	for i, value := range stringSlice {
+		fmt.Println("i:", i, "value:", value)
+	}
 
 	// Take a slice of index 1 and 2 of the slice of strings.
+	slicedSlice := stringSlice[1:2]
 
 	// Display each index position and slice values for the new slice.
+	fmt.Println("Sliced slices")
+	for i, value := range slicedSlice {
+		fmt.Println("i:", i, "value:", value)
+	}
 }
