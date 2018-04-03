@@ -38,5 +38,6 @@ func main() {
 	x := float64(w)
 
 	// Display the value of that variable.
+	//fmt.Printf("%T", x)
 	fmt.Println(x)
 }
