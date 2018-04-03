@@ -40,3 +40,30 @@ aa := int32(10) // this is a type conversion (not like a C cast)
 * for every value that exists of type T, another type exists of type *T
 * & = address (where is the box?)
 * * = value pointer points to (what is in the box?) - dereferences the pointer
+
+### Constants
+
+* iota - increases the value by 1 in a const block
+
+```
+// 0, 1, 2
+const (
+  unknown = iota
+  active = iota
+  inactive = iota
+)
+
+// 1, 2, 3
+const (
+  unknown = iota + 1
+  active
+  inactive
+)
+
+// bitshift values - golang infers the expression pattern
+const (
+  Ldate = 1 << iota
+  Rdate
+  Tdate
+)
+```
