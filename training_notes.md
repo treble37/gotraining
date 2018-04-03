@@ -82,3 +82,11 @@ const (
 * Third word is the capacity of the whole backing array structure
 * Any array or slice can be re-sliced
 * append is the only method that can grow a slice
+
+### Strings
+
+* All go source code files are assumed to be in UTF-8
+* rune is really an alias for int32 and is equivalent to int32 in all ways to distinguish character values from integer values
+* see topics/go/language/slices/example6/example6.go
+* see [Strings, bytes, runes and characters in Go](https://blog.golang.org/strings)
+* see topics/go/language/slices/example7/example7.go for variadic function example
