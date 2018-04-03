@@ -15,10 +15,13 @@ import "fmt"
 func main() {
 
 	// Declare a nil slice of integers.
-	slice := make([]int, 3)
+	var slice []int
+	//slice := make([]int, 3)
 
 	// Appends numbers to the slice.
-	slice = append(slice, 4)
+	for i := 0; i < 5; i++ {
+		slice = append(slice, i+1)
+	}
 
 	// Display each value in the slice.
 	for i, value := range slice {
