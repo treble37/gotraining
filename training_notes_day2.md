@@ -64,4 +64,6 @@ switch v := m.(type) {
 * try to avoid type pollution
 * see topics/go/design/mocking
 
+## Resources
 
+[Awesome Go](https://awesome-go.com/)
