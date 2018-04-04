@@ -6,12 +6,19 @@
 package main
 
 // Add imports.
+import "fmt"
 
 func main() {
 
 	// Declare and make a map of integer type values.
+	hollywood := make(map[string]int)
 
 	// Initialize some data into the map.
-
+	hollywood["Beverly Hills"] = 90201
+	hollywood["Santa Monica"] = 90291
+	hollywood["Westwood"] = 96137
 	// Display each key/value pair.
+	for k, v := range hollywood {
+		fmt.Printf("key[%s] value[%d]\n", k, v)
+	}
 }
