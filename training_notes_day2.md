@@ -50,3 +50,9 @@ switch v := m.(type) {
 ```
 
 * everything satisfies an empty interface (see example3.go in design/composition/assertions)
+
+### Embedding
+
+### Exporting
+
+

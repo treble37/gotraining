@@ -8,7 +8,10 @@
 // two hockey values inside the slice of haystacks and perform the search.
 package main
 
-import "strings"
+import (
+	"fmt"
+	"strings"
+)
 
 // finder defines the behavior required for performing matching.
 type finder interface {
@@ -30,24 +33,37 @@ func (s *sport) find(needle string) bool {
 // hockey information:
 // - Have it embed the sport type first.
 // - Have it include a field with the country of the team.
+type hockey struct {
+	sport
+	country string
+}
 
 // find checks the value for the specified term.
-func ( /* receiver type */ ) find(needle string) bool {
+func (h *hockey) find(needle string) bool {
 
 	// Make sure you call into find method for the embedded sport type.
 
 	// Implement the search for the new fields.
-	return false
+	return h.sport.find(needle) || strings.Contains(h.country, needle)
 }
 
 func main() {
 
 	// Define the term to find.
-
+	term := "Montreal"
 	// Create a slice of finder values and assign values
 	// of the concrete hockey type.
-
+	hockeyTeams := []finder{
+		&hockey{sport{"Mighty Ducks", "Anaheim"}, "USA"},
+		&hockey{sport{"Canadiens", "Montreal"}, "Canada"},
+	}
 	// Display what we are trying to find.
+	fmt.Println("Looking for ", term)
 
 	// Range of each finder value and check the term.
+	for _, team := range hockeyTeams {
+		if team.find(term) {
+			fmt.Printf("Found %s", term)
+		}
+	}
 }
