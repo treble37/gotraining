@@ -64,9 +64,10 @@ switch v := m.(type) {
 * try to avoid type pollution
 * see topics/go/design/mocking
 
-### Day 2 Exercise
+### Day 2 Exercise - github contributions part 2 and sha256
 
 * it is virtually impossible to unit test main
+* if you don't give an exit status, your program assumes exit status 0
 
 #### Setting up GOPATH
 
@@ -75,6 +76,13 @@ Put this gotraining repo in ~/Documents/github_code/src
 Set GOPATH=/Users/hallmarklabs/Documents/github_code
 
 * Notice that your GOPATH needs to point to the parent directory of src
+
+### Jacob Walker
+
+@jcbwlkr on Twitter
+
 ## Resources
 
-[Awesome Go](https://awesome-go.com/)
+* [Awesome Go](https://awesome-go.com/)
+* [Ardlabs service](https://github.com/ardanlabs/service)
+* See the chatbot exercise
