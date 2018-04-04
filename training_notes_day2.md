@@ -55,4 +55,13 @@ switch v := m.(type) {
 
 ### Exporting
 
+* dep is the current recommendation for package management
+* see counters.go
+
+### Composition
+
+* see topics/go/design/grouping
+* try to avoid type pollution
+* see topics/go/design/mocking
+
 
