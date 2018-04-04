@@ -114,13 +114,6 @@ if _, err := updateUser(&u); err != nil {}
 
 ### Tool Suggestions from Jacob
 
-#### Minimum required tools
-
-* gofmt (for formatting code)
-* goimports (it is gofmt plus it updates your imports)
+* golint
 * govet (looks at code for safety concerns)
-* golint (style)
-
-#### Other tools
-
-* gometalinter
+* 
