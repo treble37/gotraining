@@ -22,7 +22,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	result := printContributors("ardanlabs/gotraining", c)
+	result := printContributors("golang/go", c)
 
 	os.Exit(result)
 }

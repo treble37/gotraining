@@ -64,6 +64,17 @@ switch v := m.(type) {
 * try to avoid type pollution
 * see topics/go/design/mocking
 
+### Day 2 Exercise
+
+* it is virtually impossible to unit test main
+
+#### Setting up GOPATH
+
+Put this gotraining repo in ~/Documents/github_code/src
+
+Set GOPATH=/Users/hallmarklabs/Documents/github_code
+
+* Notice that your GOPATH needs to point to the parent directory of src
 ## Resources
 
 [Awesome Go](https://awesome-go.com/)
