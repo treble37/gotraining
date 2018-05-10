@@ -33,3 +33,27 @@
 * when you range over a channel you are performing a receive
 * no fan out patterns in a web service
 * select statement allows you to perform channel sends/receives - helps you create event loops
+
+## Contexts
+
+* topics/go/packages/context/example1/example1.go
+* topics/go/packages/context/example5/example5.go
+* comments are documentation
+* topics/go/concurrency/patterns/logger/main/main.go
+
+## Benchmarking
+
+* merge sort is the worst sorting algorithm to use in Go (allocation hell because of the splitting)
+* when running benchmarks, your machine must be idle
+
+## Testing
+
+* topics/go/testing/benchmarks/basic/basic_test.go
+* topics/go/testing/tests/example1/example1_test.go
+* you should check error values in your tests
+* topics/go/testing/tests/example5/example5_test.go - subtesting
+* don't mock database tests
+* topics/go/testing/tests/example4/example4.go - example webserver
+* doc.go - allows you to put overview comments in your documentation; tabs and spaces determine whether you get code blocks
+* go test -cover
+* go test -coverprofile p.out ; go tool cover -html p.out
