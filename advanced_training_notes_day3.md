@@ -57,3 +57,22 @@
 * doc.go - allows you to put overview comments in your documentation; tabs and spaces determine whether you get code blocks
 * go test -cover
 * go test -coverprofile p.out ; go tool cover -html p.out
+* ngrok - testing tool written in Go
+
+## Profiling
+
+* topics/go/profiling/stack_trace/README.md
+* topics/go/profiling/trace/trace.go (try "web list find")
+* topics/go/profiling/project/search/search.go
+* GODEBUG=gctrace=1 ./project > /dev/null - use this to detect memory leaks by running this tool and paying attention to these numbers: (4->4->0 MB)
+* scavenger - return any extra heap memory to the operating system
+* see /debug/pprof in your web service
+* go tool pprof -alloc_space http://localhost:5000/debug/pprof/heap - get some low hanging fruit
+  * top 40 -cum
+* topics/go/profiling/memcpu/stream.go
+
+## Resources
+
+* Bill will sit on hangout with you if you need help...Reach out to him in slack
+* Safari online has 14 hours of this class online
+* see Opening.md - Bill will give you a free PDF of Go In Action
